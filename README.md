@@ -10,7 +10,7 @@ Mini proyecto de web scraping. Se realiza el scraping de la pagina [NextViaje](h
 
 ## Instalación y ejecución
 
-Instalamos las dependencias necesarias i ejecutamos el script *dev*:
+Instalamos las dependencias necesarias y ejecutamos el script *dev*:
 
 ```console
 npm install
