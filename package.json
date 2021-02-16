@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node index.js",
-    "server": "node servidor/servidor.js"
-
+    "server": "node server/server.js"
   },
   "author": "Jonathan David Krucheski",
   "license": "ISC",

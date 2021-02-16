@@ -1,42 +1,43 @@
-# Web Scraping con Puppetee
+# Web Scraping with Puppetee
 
-## Descripción
+## Description 
 
-Mini proyecto de web scraping. Se realiza el scraping de la pagina [NextViaje](https://nextviaje.now.sh/) que contiene un listado de casas en alquiler. Los objetivos del proyecto serán:
+Mini scraping web project of the [NextViaje](https://nextviaje.now.sh/) page, that contains a list of houses for rent. The objectives of the project will be: 
 
-* Extraer datos relevantes por medio de Web Scraping.
-* Guardar estos datos en una base de datos MongoDB.
-* Crear un API que permita filtrar las casas en base a sus atributos.
+* Extract relevant data through Web Scraping.
+* Save this data in a MongoDB database.
+* Create an API that allows you to filter the houses based on their attributes. 
 
-## Instalación y ejecución
+## Installation and execution
 
-Instalamos las dependencias necesarias y ejecutamos el script *dev*:
+We install the necessary dependencies and execute the *dev* script: 
 
 ```console
 npm install
 npm run dev
 ```
 
-Al ejecutar este último comando la consola mostrará lo siguiente indicando que todo ha salido bien:
+When executing this command, the console will show the following message indicating that everything has gone well:
 
 ```console
 Empezando scaping...
 Casas guardadas exitosamente.
 ```
 
-El script guardará todos los datos scrapeados en una colección de Mongo DB llamada *nextviaje*. Ahora ejecutamos un servidor que leerá estos datos desde la db y los dispondrá en una API REST:
+The script will save all scraped data to a Mongo DB collection called *nextviaje*. Now we run a server that will read this data from the DB and serve it in a REST API: 
 
 ```console
 npm run server
 ```
 
-Si todo sale bien, en la consola se mostrará el siguiente mensaje:
+If everything goes well, the following message will be displayed on the console:
 
 ```console
-npm run dev
+Escuchando en puerto: 3010
 ```
 
-Y podremos comenzar a probar los siguientes filtros: numeroDeEstrellas, servicios, comodidad, numeroDeComodidad, precioMinimo, precioMaximo. Ejemplos:
+And we can start testing the following filters: numberOfStars, services, comfort, numberOfComfort, minimum price, maximum price. Examples:
+
 * /api/casas?numeroDeEstrellas=4
 * /api/casas?servicios=plancha,cocina,wifi
 * /api/casas?comodidad=habitaciones&numeroDeComodidad=1&

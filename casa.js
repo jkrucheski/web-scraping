@@ -1,4 +1,4 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 // El modelo de Casa lo pongo en un único archivo para evitar repetir código.
 // Esquema:
 const CasaEsquema = new mongoose.Schema({
@@ -11,6 +11,6 @@ const CasaEsquema = new mongoose.Schema({
   numeroDeEstrellas: Number,
   numeroDeOpiniones: Number,
   url: String,
-})
+});
 // Exportamos el modelo
-module.exports = mongoose.model("Casa", CasaEsquema)
+module.exports = mongoose.model("Casa", CasaEsquema);
